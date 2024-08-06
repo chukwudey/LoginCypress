@@ -6,9 +6,9 @@ describe('login', () => {
 
   it('Successful login', () => {
     cy.get('#user-name').type('standard_user');
-    cy.wait(1000)
+    cy.wait(4000)
     cy.get('#password').type('secret_sauce');
-    cy.wait(1000)
+    cy.wait(2000)
     cy.get('#login-button').click();
     
   });
